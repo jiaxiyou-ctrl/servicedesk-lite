@@ -14,3 +14,9 @@ spring:
 
   flyway:
     enabled: true
+
+security:
+  jwt:
+    secret: ${SERVICEDESK_JWT_SECRET:dev-secret-please-change-dev-secret-please-change}
+    issuer: servicedesk-lite
+    ttl-seconds: 3600
